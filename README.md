@@ -54,7 +54,7 @@ One peculiarity of the current project is that flex items are also attributed th
 
 This nested structure is created to benefit from the advantages of flex properties in multiple layers.
 
-```SCSS
+```CSS
 div {
   display:flex;
   ul {
