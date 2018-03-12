@@ -1,3 +1,5 @@
+Link to the working pen [here](https://codepen.io/borntofrappe/full/Wzbzqw/).
+
 # The task
 
 Complete the aptly named project in the line of "Applied Responsive Web Design Projects": *Build a Product Landing Page*.
