@@ -26,7 +26,7 @@ The task itself comes accompanied by a considerable amount of requests.
 
 #### The layout of the page should also:
 
-- incorporate a navbar always at the top of the viewport;
+- incorporate a navbar always at the top of the page;
 
 - make use of at least one media query and one flex container.
 
@@ -135,3 +135,15 @@ With this practice, which seems overly complicated , especially for just a singl
 With additional items, the advantages are more evident: all declarations are grouped together in a single block of code and each SVG is used as needed throughout the page.
 
 Once implemented, every SVG can be easily targeted in CSS, just like any HTML element, and styled accordingly.
+
+
+## Video and images
+
+Beyond simple pieces of text and boxes in which to store them, the project makes use of other assets such as images, in the form of SVG files, and videos. These are included with appropriate HTML tags.
+
+For *images*, or *svg* in the specific context, these assets are referenced inside of `<figure>` elements. These containers improve the accessibility of the page by grouping together graphics with their optional caption.
+
+For *videos*, these are included inside of `<iframe>` elements, which are directly copy-pasted from *Youtube*'s own website. It is here possible to find the **embed** option under the *share* label. In the provided panel it is possoble to immediately find the required HTML structure along with additional options for the imported video.
+
+
+
