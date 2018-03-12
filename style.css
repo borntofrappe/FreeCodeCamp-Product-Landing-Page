@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates");
+#header #nav-bar a, #footer a {
+  color: inherit;
+  text-decoration: none; }
+
+#header #nav-bar {
+  list-style: none; }
+
+#contactus-section .contact-form #form .survey-item #message, #contactus-section .contact-form #form .survey-item #email {
+  outline: none;
+  border: none; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: #3c4e5d;
+  background-color: white;
+  padding-top: 64px; }
+
+#header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: white;
+  background-color: #3c4e5d;
+  box-shadow: 0 1px 5px #3c4e5d;
+  z-index: 5; }
+  #header #header-img {
+    flex-grow: 1;
+    display: flex;
+    align-items: center; }
+    #header #header-img svg {
+      width: 36px;
+      height: 36px; }
+    #header #header-img figcaption {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 0.12rem;
+      margin-left: 0.5rem; }
+  #header #nav-bar {
+    display: flex;
+    line-height: 36px; }
+    #header #nav-bar li {
+      font-size: 1.02rem;
+      text-transform: uppercase;
+      margin: 0 1rem;
+      position: relative; }
+      #header #nav-bar li:before {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+        transition: 0.3s all ease-out; }
+      #header #nav-bar li:hover:before {
+        left: 0;
+        width: 100%; }
+
+#problem-section {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem; }
+  #problem-section .text {
+    max-width: 500px; }
+    #problem-section .text h1 {
+      font-size: 3.2rem; }
+      #problem-section .text h1 .highlight-text {
+        text-decoration: underline;
+        font-size: calc(3.5rem + 1vw); }
+  #problem-section figure {
+    min-width: 200px; }
+    #problem-section figure svg {
+      width: 100%;
+      transform: scale(1) rotate(12deg);
+      transition: all 0.3s ease-out; }
+      #problem-section figure svg:hover {
+        transform: scale(0.9) rotate(0deg); }
+
+#solution-section {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem; }
+  #solution-section .text {
+    max-width: 500px; }
+    #solution-section .text h1 {
+      font-size: 3.2rem; }
+      #solution-section .text h1 .highlight-letter {
+        text-decoration: underline;
+        font-size: 3.5rem; }
+        #solution-section .text h1 .highlight-letter:nth-child(odd) {
+          text-transform: uppercase; }
+  #solution-section figure {
+    min-width: 400px; }
+    #solution-section figure svg {
+      transition: all 0.3s ease-out; }
+      #solution-section figure svg:hover {
+        transform: scale(1.1); }
+
+#pricing-section {
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  #pricing-section article {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    margin: 0 2rem;
+    transition: all 0.4s ease-out; }
+    #pricing-section article:hover {
+      color: white;
+      background-color: #3c4e5d; }
+    #pricing-section article h2 {
+      text-transform: uppercase;
+      font-size: 3rem;
+      text-align: center; }
+    #pricing-section article .features {
+      padding: 3rem 0; }
+      #pricing-section article .features ul {
+        list-style: square inside;
+        line-height: 1.5;
+        font-size: 1.3rem; }
+    #pricing-section article h3 {
+      text-align: center; }
+
+#contactus-section {
+  min-height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem; }
+  #contactus-section #video {
+    width: 560px;
+    height: 315px;
+    margin: 1rem; }
+  #contactus-section .contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; }
+    #contactus-section .contact-form .text {
+      max-width: 550px; }
+      #contactus-section .contact-form .text h2 {
+        font-size: 2.5rem; }
+    #contactus-section .contact-form #form {
+      max-width: 500px; }
+      #contactus-section .contact-form #form .survey-item {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0; }
+        #contactus-section .contact-form #form .survey-item label {
+          padding: 0 0.5rem;
+          font-size: 1.1rem;
+          border-left: 3px solid #28343e;
+          font-weight: bold; }
+        #contactus-section .contact-form #form .survey-item #message {
+          resize: none;
+          min-height: 100px;
+          flex-grow: 1;
+          padding: 0.5rem;
+          font-size: 1.1rem;
+          font-family: "Montserrat", sans-serif;
+          background-color: #c1cdd7; }
+          #contactus-section .contact-form #form .survey-item #message::placeholder {
+            color: #3c4e5d; }
+        #contactus-section .contact-form #form .survey-item #email {
+          flex-grow: 1;
+          padding: 0.5rem;
+          font-size: 1.1rem;
+          font-family: "Montserrat", sans-serif;
+          background-color: #c1cdd7; }
+          #contactus-section .contact-form #form .survey-item #email::placeholder {
+            color: #3c4e5d; }
+      #contactus-section .contact-form #form #submit {
+        padding: 0.75rem 1rem;
+        font-size: 1.2rem;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        background-color: #28343e;
+        border: none;
+        transition: all 0.3s ease-out; }
+        #contactus-section .contact-form #form #submit:hover {
+          background-color: #32414d; }
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 0;
+  color: white;
+  background-color: #3c4e5d;
+  box-shadow: 0 -1px 5px #3c4e5d; }
+  #footer .heart-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 0.2rem;
+    animation: heartbeat 1s 10s infinite alternate; }
+  #footer a {
+    margin: 0 0.1rem; }
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.1); } }
+@media only screen and (max-width: 800px) {
+  #header {
+    flex-direction: column;
+    align-items: center; }
+    #header #header-img {
+      padding: 0.3rem; }
+    #header #nav-bar {
+      display: none; }
+
+  #problem-section, #solution-section {
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem 0; }
+    #problem-section .text h1, #solution-section .text h1 {
+      font-size: 2.8rem;
+      margin: 1rem 0; }
+      #problem-section .text h1 .highlight-text, #solution-section .text h1 .highlight-text {
+        font-size: 3rem; }
+
+  #pricing-section {
+    flex-direction: column;
+    margin: 2rem 0; }
+
+  #contactus-section {
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem 0; }
+    #contactus-section #video {
+      width: 300px;
+      height: auto; }
+    #contactus-section .contact-form {
+      align-items: center; }
+      #contactus-section .contact-form .text h2 {
+        margin: 2rem 0 1rem;
+        font-size: 2rem; }
+      #contactus-section .contact-form #form .survey-item {
+        flex-direction: column; }
+        #contactus-section .contact-form #form .survey-item label {
+          margin: 1rem 0; } }
+
+/*# sourceMappingURL=style.css.map */
