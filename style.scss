@@ -2,7 +2,7 @@
 
 $font-family-main: 'Montserrat', sans-serif;
 $font-family-header: 'Montserrat Alternates', sans-serif;
-  $darker-color: hsl(207, 21%, 30%);
+$darker-color: hsl(207, 21%, 30%);
 $lighter-color: hsl(207, 66%, 76%);
 
 %anchor-link-reset {
@@ -47,6 +47,10 @@ body {
     flex-grow: 1; // stretch the figure element to occupy the available space
     display: flex; // make flex container
     align-items: center; // align the svg and the figcaption vertically
+    // hide image as per specification in the respective HTML comment
+    #header-img {
+      display: none;
+    }
     svg {
       width: 36px;
       height: 36px;
