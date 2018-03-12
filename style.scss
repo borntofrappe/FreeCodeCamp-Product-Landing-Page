@@ -41,7 +41,7 @@ body {
   font-family: $font-family-header;
   color: lighten($lighter-color, 50%);
   background-color: $darker-color;
-  box-shadow: 0 1px 5px rgba($darker-color, 10%);
+  box-shadow: 0 1px 10px rgba($darker-color, 0.2);
   z-index: 5; // elevate the header above the rest of the page
   #header-img {
     flex-grow: 1; // stretch the figure element to occupy the available space
@@ -276,7 +276,7 @@ body {
   padding: 0.8rem 0;
   color: lighten($lighter-color, 50%);
   background-color: $darker-color;
-  box-shadow: 0 -1px 5px rgba($darker-color, 10%);
+  box-shadow: 0 -1px 10px rgba($darker-color, 0.2);
   .heart-icon {
     width: 24px;
     height: 24px;
