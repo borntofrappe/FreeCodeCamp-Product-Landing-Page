@@ -167,9 +167,19 @@
 
     <header id="header">
       <figure id="header-img">
+        <!--       
+        In order for the project to fulfill all its tasks, it needs to contain an image element of id `header-img`. 
+        This *has to be* an `img` element. Since I'd rather use an SVG declared in the above SVG set, 
+        I do include an `img` element with the appropriate id, but hide it with CSS, and show the following SVG instead.
+
+        Outside of codepen, it is very well possible to reference the local SVG file in the `src` attribute of the image element.
+        -->
+        <img id="header-img" src="image-if-available-which-it-is-not-for-now">
+        
         <svg class="product-icon" viewBox="0 0 26.458 26.458">
           <use xlink:href="#product-icon"></use>
         </svg>
+        
         <figcaption>
           TaB
         </figcaption>
@@ -261,7 +271,7 @@
             <textarea id="message" placeholder="I'd like to know more about the free plan..."></textarea>
           </div>
           <div class="survey-item">
-            <label for="email" id="email-label">Email</label>
+            <label for="email" id="email-label" name="email">Email</label>
             <input type="email" id="email" placeholder="sleeping@home.com" required>
           </div>
           <input type="submit" id="submit" value="Send Off">
